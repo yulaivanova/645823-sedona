@@ -5,8 +5,115 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="10" height="10" alt="Логотип «Седона»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photos.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <main>
+
+      <section class="header-image">  <!-- или лучше div поставить? -->
+          <img src="img/img.svg" width="10" height="10" alt="Вид на Седону">  <!-- здесь правильнее делать фоном или отдельно img? -->
+      </section>
+
+      <section class="adventages">
+        <h1 class="visually-hidden">5 преимуществ Седоны</h1> 
+        <b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
+        <P>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</P>
+      </section>
+      <section class="true-city"> 
+        <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+        <p>-№1-</p>
+        <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+      </section>
+      <section class="true-city-image"> <!-- как правильнее добавлять изображение, отдельным section, или полностью описание достопремечательности будет section, а два блока внутри(текст и картинка) div? -->
+          <img src="img/img.svg" width="10" height="10" alt="Настоящий городок">
+      </section>
+
+      <section class="add-adventages">
+        <h2 class="visually-hidden">Дополнительные преимущества Седоны</h2>
+        <ul class="add-adventages-list">
+          <li class="add-adventages-item">
+            <h3>ЖИЛЬЕ</h3>
+            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+          </li>
+          <li class="add-adventages-item">
+            <h3>ЕДА</h3>
+            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+          </li>
+          <li class="add-adventages-item">
+            <h3>СУВЕНИРЫ</h3>
+            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+          </li>
+        </ul>  
+      </section>
+      
+      <section class="devil-bridge-image"> 
+          <img src="img/img.svg" width="10" height="10" alt="Настоящий городок">
+      </section>
+      <section class="devil-bridge"> 
+        <h2>ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h2>
+        <p>-№2-</p>
+        <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+      </section>
+
+      <section class="last-adventages">
+        <h2 class="visually-hidden">Финальные три преимущества</h2>
+        <ul class="last-adventages-list">
+          <li class="last-adventages-item">
+            <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+            <p>-№3-</p>
+            <p>ВСЕ ДОСТОПРЕМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </li>
+          <li class="last-adventages-item">
+            <h2>КРАСИВАЯ ДОРОГА</h2>
+            <p>-№4-</p>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+          </li>
+          <li class="last-adventages-item">
+            <h2>МАЛО ТУРИСТОВ</h2>
+            <p>-№4-</p>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          </li>
+        </ul>  
+      </section>
+      
+      <section class="proposal">
+        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p>УКАЖИТЕ ПРЕДПОПЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+        </p>
+        <a class="button" href="#">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
+      </section>
+      <section class="map">
+        <a href="#">Карта</a>  
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p class="footer-hash">
+         #VISITSEDONA
+      </p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твитер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <a class="footer-logo" href="https://htmlacademy.ru">
+        <img src="img/logohtml.svg" width="10" height="10" alt="Логотип «HtmlAcademy»">
+      </a>
+    </footer>
+
 
   </body>
 </html>

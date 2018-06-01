@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="10" height="10" alt="Логотип «Седона»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photos.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр отелей</h2>
+        <!-- Здесь будет форма -->
+      </section>
+
+      <section class="catalog-sorting">
+        <h2 class="visually-hidden">Сортировка отелей</h2>
+        <span class="sort-find">НАЙДЕНО: 3</span><!-- Число должно подтягиваться или уже указано 3? -->
+        <span class="sort-name">СОРТИРОВКА:</span>
+        <div class="sorting">
+          <ul class="sorting-list"> <!-- С оформлением сортировки тоже проблема, так как совсем не понятно как ее лучше делать -->
+            <li>
+              <a href="#">ПО ЦЕНЕ</a>
+            </li>
+            <li> 
+              <a href="#">ПО ТИПУ</a>
+            </li>
+            <li>
+              <a href="#">ПО РЕЙТИНГУ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="up-down">
+          <ul class="up-down-list">
+            <li class="up">
+              <span class="up-img"></span>
+            </li>
+            <li class="down">
+              <span class="up-img"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список отелей</h2>
+
+        <article class="catalog-item">
+            <div class="catalog-image">
+                <img src="img.jpg" width="10" height="10" alt="AMARA RESORT &amp; SPA"/>
+            </div>
+            <div class="catalog-description">
+              <h2>
+                <a href="#">AMARA RESORT &amp; SPA</a>
+              </h2>
+              <div class="description-detail">
+                  <span>ГОСТИНИЦА</span><br>
+                  <a href="#">Подробнее</a>
+              </div>
+              <div class="description-price">
+                <span>ОТ 4000 Р.</span><br>
+                <a href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+              <div class="stars">
+                  <img src="4star.jpg" width="10" height="10" alt="4 звезды"/>
+              </div>
+              <div class="rating">
+                  <span>Рейтинг: 8,5</span>
+              </div>
+            </div>
+        </article>
+
+        <article class="catalog-item">
+            <div class="catalog-image">
+                <img src="img.jpg" width="10" height="10" alt="RESORT QUAIL INN"/>
+            </div>
+            <div class="catalog-description">
+              <h2>
+                <a href="#">RESORT QUAIL INN</a>
+              </h2>
+              <div class="description-detail">
+                  <span>МОТЕЛЬ</span><br>
+                  <a href="#">Подробнее</a>
+              </div>
+              <div class="description-price">
+                <span>ОТ 3000 Р.</span><br>
+                <a href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+              <div class="stars">
+                  <img src="3star.jpg" width="10" height="10" alt="3 звезды"/>
+              </div>
+              <div class="rating">
+                  <span>Рейтинг: 8,9</span>
+              </div>
+            </div>
+        </article>
+
+        <article class="catalog-item">
+            <div class="catalog-image">
+                <img src="img.jpg" width="10" height="10" alt="VILLAS AT POCO DIABLO"/>
+            </div>
+            <div class="catalog-description">
+              <h2>
+                <a href="#">VILLAS AT POCO DIABLO</a>
+              </h2>
+              <div class="description-detail">
+                  <span>АПАРТАМЕНТЫ</span><br>
+                  <a href="#">Подробнее</a>
+              </div>
+              <div class="description-price">
+                <span>ОТ 2000 Р.</span><br>
+                <a href="#">ЗАБРОНИРОВАТЬ</a>
+              </div>
+              <div class="stars">
+                  <img src="2star.jpg" width="10" height="10" alt="2 звезды"/>
+              </div>
+              <div class="rating">
+                  <span>Рейтинг: 9,2</span>
+              </div>
+            </div>
+        </article>
+    </section>
+
+
+
+    <footer class="main-footer">
+      <div class="footer-hash">
+        <span>#VISITSEDONA</span>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твитер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <a class="footer-logo" href="https://htmlacademy.ru">
+        <img src="img/logohtml.svg" width="10" height="10" alt="Логотип «HtmlAcademy»">
+      </a>
+    </footer>
+
+
+  </body>
+</html>
