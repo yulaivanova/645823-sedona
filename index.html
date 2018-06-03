@@ -19,27 +19,33 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-      <section class="header-image">  <!-- или лучше div поставить? -->
-          <img src="img/img.svg" width="10" height="10" alt="Вид на Седону">  <!-- здесь правильнее делать фоном или отдельно img? -->
-      </section>
+      <div class="header-image">  
+          <img src="img/img.svg" width="10" height="10" alt="Вид на Седону">  
+          <p class="header-name1">Welcome</p> <!-- Как в данном случа лучше оформлять этот текст, просто каждая строка по-своему стилизована и можно ли как-то стилизовать, используя только один p?-->
+          <p class="header-name2"> - to the gorgeous -</p>
+          <p class="header-name3">SEDONA</p>
+      </div>
 
-      <section class="adventages">
+      <section class="main-description">
         <h1 class="visually-hidden">5 преимуществ Седоны</h1> 
         <b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b>
         <P>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</P>
       </section>
+
       <section class="true-city"> 
-        <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
-        <p>-№1-</p>
-        <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-      </section>
-      <section class="true-city-image"> <!-- как правильнее добавлять изображение, отдельным section, или полностью описание достопремечательности будет section, а два блока внутри(текст и картинка) div? -->
+        <div class="true-city-description">
+          <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+          <span>-№1-</span>
+          <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+        <div class="true-city-image"> 
           <img src="img/img.svg" width="10" height="10" alt="Настоящий городок">
+        </div>
       </section>
 
-      <section class="add-adventages">
+      <section class="add-adventages">  <!-- в данном случае правильнее списком или каждый элемент списка как div?-->
         <h2 class="visually-hidden">Дополнительные преимущества Седоны</h2>
         <ul class="add-adventages-list">
           <li class="add-adventages-item">
@@ -56,32 +62,34 @@
           </li>
         </ul>  
       </section>
-      
-      <section class="devil-bridge-image"> 
-          <img src="img/img.svg" width="10" height="10" alt="Настоящий городок">
-      </section>
+       
       <section class="devil-bridge"> 
-        <h2>ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h2>
-        <p>-№2-</p>
-        <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
-      </section>
+        <div class="devil-bridge-description">
+          <h2>ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h2>
+          <span>-№2-</span>
+          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+        </div>
+        <div class="devil-bridge-image"> 
+          <img src="img/img.svg" width="10" height="10" alt="Мост дъявола">
+        </div>
+        </section>
 
       <section class="last-adventages">
         <h2 class="visually-hidden">Финальные три преимущества</h2>
         <ul class="last-adventages-list">
           <li class="last-adventages-item">
             <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <p>-№3-</p>
+            <span>-№3-</span>
             <p>ВСЕ ДОСТОПРЕМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
           <li class="last-adventages-item">
             <h2>КРАСИВАЯ ДОРОГА</h2>
-            <p>-№4-</p>
+            <span>-№4-</span>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
           </li>
           <li class="last-adventages-item">
             <h2>МАЛО ТУРИСТОВ</h2>
-            <p>-№4-</p>
+            <span>-№5-</span>
             <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
           </li>
         </ul>  
@@ -89,9 +97,8 @@
       
       <section class="proposal">
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>УКАЖИТЕ ПРЕДПОПЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
-        </p>
-        <a class="button" href="#">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
+        <p>УКАЖИТЕ ПРЕДПОПЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <a class="search-button" href="#">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
       </section>
       <section class="map">
         <a href="#">Карта</a>  
@@ -99,9 +106,9 @@
     </main>
 
     <footer class="main-footer">
-      <p class="footer-hash">
-         #VISITSEDONA
-      </p>
+      <div class="footer-hash">
+        <span>#VISITSEDONA</span>
+      </div>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Твитер</a></li>
