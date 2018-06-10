@@ -96,10 +96,10 @@
       <section class="proposal">
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p>УКАЖИТЕ ПРЕДПОПЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <a class="search-button" href="#">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
+        <a class="search-button" href="search-hotels.html">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
       </section>
       <section class="map">
-        <a href="#">Карта</a>  
+        <img src="img/map.jpg" width="1200" height="470" alt="Карта Седоны">  
       </section>
     </main>
 
@@ -118,6 +118,42 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="Логотип «HtmlAcademy»">
       </a>
     </footer>
+
+    <section class="modal modal-search-hotels">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="search-hotel-date">
+          <label for="arrivale-date">Дата заезда:</label>
+          <input id="arrivale-date" type="text" name="date" value="24 апреля 2017"> 
+          <span class="icon-calendar"></span>
+        </div>
+        <div class="search-hotel-date">
+          <label for="departure-date">Дата выезда:</label>
+          <input id="departure-date" type="text" name="date" value="4 июля 2017"> 
+          <span class="icon-calendar"></span>
+        </div>
+
+        <div class="search-hotel-people">
+          <label for="amount-of-adults">Взрослые:</label>
+          <button type="button" name="minus-adult">
+            <span class="icon-minus"></span>
+          </button>
+          <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
+          <button type="button" name="plus-adult">
+            <span class="icon-plus"></span>
+         </button>
+          <label for="amount-of-childs">Дети:</label>
+          <button type="button" name="minus-adult">
+            <span class="icon-minus"></span>
+          </button>
+          <input type="text" name="amount-of-childs" value="0" id="amount-of-childs">
+          <button type="button" name="plus-adult">
+            <span class="icon-plus"></span>
+          </button>
+        </div>
+        <button type="submit">Найти</button>
+      </form>
+    </section>
 
 
   </body>
