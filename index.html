@@ -120,36 +120,29 @@
     </footer>
 
     <section class="modal modal-search-hotels">
-      <h2 class="visually-hidden">Поиск гостиницы</h2>
       <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="search-hotel-date">
           <label for="arrivale-date">Дата заезда:</label>
           <input id="arrivale-date" type="text" name="date" value="24 апреля 2017"> 
-          <span class="icon-calendar"></span>
+          <button type="button" class="icon-calendar">Календарь</button>
         </div>
         <div class="search-hotel-date">
           <label for="departure-date">Дата выезда:</label>
           <input id="departure-date" type="text" name="date" value="4 июля 2017"> 
-          <span class="icon-calendar"></span>
+          <button type="button" class="icon-calendar">Календарь</button>
         </div>
 
         <div class="search-hotel-people">
           <label for="amount-of-adults">Взрослые:</label>
-          <button type="button" name="minus-adult">
-            <span class="icon-minus"></span>
-          </button>
+          <button type="button" name="minus-adult" class="minus-icon"></button>
           <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
-          <button type="button" name="plus-adult">
-            <span class="icon-plus"></span>
-         </button>
+          <button type="button" name="plus-adult" class="plus-icon"></button>
+          
           <label for="amount-of-childs">Дети:</label>
-          <button type="button" name="minus-adult">
-            <span class="icon-minus"></span>
-          </button>
+          <button type="button" name="minus-adult" class="minus-icon"></button>
           <input type="text" name="amount-of-childs" value="0" id="amount-of-childs">
-          <button type="button" name="plus-adult">
-            <span class="icon-plus"></span>
-          </button>
+          <button type="button" name="plus-adult" class="plus-icon"></button>
         </div>
         <button type="submit">Найти</button>
       </form>
