@@ -1,7 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
-  
     font-family:  "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
@@ -9,6 +6,13 @@ body {
     text-transform: uppercase;
     
     background-color: #ffffff;
+  }
+
+  .container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
   }
 
   a {
@@ -20,16 +24,45 @@ body {
     line-height: 26px;
     color: #000000;
     font-weight: 700;
-  
     background-color: #ffffff;
   }
 
   .site-navigation {
     list-style: none;
+
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 23px;
+    justify-content: space-around;
+    margin: 0;
   }
 
   .site-navigation a {
     color: #000000;
+  }
+
+  /* не понимаию почему без обнуления паддинга у ul список отлетает вправо? */
+  ul {          
+    padding: 0;
+  } 
+
+  .header-image {
+    background-image: url("../img/background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1200px auto;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 60px;
+  }
+
+  .welcome-title {
+    margin-top: 78px;
+    margin-bottom: 30px;
   }
 
   .site-navigation a:hover,
@@ -38,7 +71,7 @@ body {
   }
   .site-navigation a:active {
     color: #e2e2e2;
-}
+  }
 
   .site-navigation .active {
     color: #d0cac6;
@@ -46,60 +79,129 @@ body {
 
   .main-description {
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .main-description h2 {
     font-size: 21px;
     font-weight: 700;
+
+    padding-bottom: 30px;
+  }
+
+  .true-city {
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   .true-city-description {
     color: #ffffff;
     text-align: center;
     background-color: #81b3d2;
+  
+    width: 400px;
+  }
+
+  .true-city-image {
+    width: 800px;
+    height: 256px;      
   }
 
   .true-city-description h2 {
     font-size: 21px;
     font-weight: 700;
+
+    margin-top: 40px;
+    margin-bottom:20px;
+  }
+  
+  .true-city-description p {
+    margin-bottom:60px;
+    margin-top: 20px;
   }
 
   .add-adventages-list {
     list-style: none;
+    display: flex;
+
+    margin: 0;
+    padding: 0;
   }
 
   .add-adventages-item {
     text-align: center;
+    width: 400px;
   }
   
   .add-adventages-item h3 {
     font-size: 21px;
     font-weight: 700;
+
+    margin-top: 155px;
+  }
+
+  .add-adventages-item p {
+    margin-bottom: 80px;
+  }
+
+  .devil-bridge {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .devil-bridge-description {
     color: #ffffff;
     text-align: center;
     background-color: #81b3d2;
+
+    width: 400px;
   }
 
   .devil-bridge-description h2 {
     font-size: 21px;
     font-weight: 700;
+
+    margin-top: 40px;
+    margin-bottom:20px;
+  }
+
+  .devil-bridge-description p {
+    margin-bottom:60px;
+    margin-top: 20px;
+  }
+
+  .devil-bridge-image {
+    width: 800px;
+    height: 256px; 
   }
 
   .last-adventages-list {
     list-style: none;
     background-color: #eeeeee;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   .last-adventages-item {
     text-align: center;
+    width: 400px;
+  }
+
+  .last-adventages-item p {
+    margin-top: 25px;
+    margin-bottom: 60px;
   }
 
   .last-adventages-item h2 {
     font-size: 21px;
     font-weight: 700;
+
+    margin-top: 40px;
+    margin-bottom: 25px;
   }
 
   .proposal {
@@ -110,6 +212,12 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+
+    margin-top: 55px;
+  }
+  
+  .proposal p {
+    margin-bottom: 50px;
   }
 
   .search-button {
@@ -137,7 +245,12 @@ body {
   }
 
   .main-footer {
-    background-color: rgba(253, 253, 253, 0.9)
+    background-color: rgba(253, 253, 253, 0.9);
+    
+    display: flex;
+    padding-top: 36px;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .footer-hash {
@@ -221,8 +334,28 @@ body {
 
   .filters {
     color: #ffffff;
-    
     background-color: #5b88b0;
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .filter-form {
+    display: flex;
+    width: 1056px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    padding-right: 72px;
+    padding-left: 72px; 
+  }
+
+  .hotel-filter {
+    width: 241px;
+  }
+
+  .cost-hotel-filter {
+    width: 528px;
+    padding-left: 200px;
   }
   
   .hotel-filter h2 {
@@ -265,6 +398,17 @@ body {
     border: none;
   }
 
+  .catalog-sorting {
+    display: flex;
+    align-items: baseline;
+    padding: 30px 73px;
+  }
+
+  .catalog-sorting ul {
+    display: flex;
+    margin: 0;
+  }
+
   .sort-find {
     font-size: 21px;
     font-weight: 700;
@@ -284,7 +428,7 @@ body {
     line-height: 18px;
     text-transform: uppercase;
 
-    color: rgba(0, 0, 0, 0.9)
+    color: rgba(0, 0, 0, 0.9);
   }
 
   .sorting-list a:hover,
@@ -294,6 +438,18 @@ body {
 
   .sorting-list a:active {
     color: #000000;
+  }
+
+  .catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-item {
+    display: flex;
+    padding-left: 73px;
+    padding-right: 73px;
+    align-items: center;
   }
 
   .catalog-description a{
@@ -310,7 +466,7 @@ body {
   }
 
   .catalog-description a:active {
-    color: rgba(0, 0, 0, 0.3)
+    color: rgba(0, 0, 0, 0.3);
   }
 
   .description-detail a{
@@ -329,7 +485,7 @@ body {
 
   .description-detail a:active {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .description-price a {
@@ -347,10 +503,15 @@ body {
 
   .description-price a:active {
     background-color: #503e33;
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .rating {
     background-color: #f2f2f2;
   }
+
+  
+
+
+  
 

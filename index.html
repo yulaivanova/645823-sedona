@@ -8,6 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  
+    <div class="container"> <!-- В барбершопе каждый блок по-отдельности оборачивают в контейнер, а можно все сразу обернуть в него и какая разница получается?-->
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -17,29 +19,29 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photos.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
+    <main>
 
       <div class="header-image">  
-          <img src="img/welcome-text.png" width="458" height="352"  alt="Welcome to Cedona">
-          <img src="img/shape.png" width="1200" height="57" alt="" /> 
+          <img class="welcome-title" src="img/welcome-text.png" width="458" height="352"  alt="Welcome to Cedona">
+          <img class="welcome-shape" src="img/shape.png" width="1200" height="57" alt="" /> 
       </div>
 
       <section class="main-description">
         <h1 class="visually-hidden">5 преимуществ Седоны</h1> 
-        <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-        <P>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</P>
+        <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
       </section>
 
       <section class="true-city"> 
         <div class="true-city-description">
           <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
           <span>-№1-</span>
-          <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
         <div class="true-city-image"> 
           <img src="img/true-city.jpg" width="800" height="256" alt="Настоящий городок">
@@ -51,15 +53,15 @@
         <ul class="add-adventages-list">
           <li class="add-adventages-item">
             <h3>ЖИЛЬЕ</h3>
-            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ <br> МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
           </li>
           <li class="add-adventages-item">
             <h3>ЕДА</h3>
-            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br> ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </li>
           <li class="add-adventages-item">
             <h3>СУВЕНИРЫ</h3>
-            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br> ПРОИЗВОДСТВА!</p>
           </li>
         </ul>  
       </section>
@@ -68,7 +70,7 @@
         <div class="devil-bridge-description">
           <h2>ТАМ ЕСТЬ МОСТ ДЪЯВОЛА</h2>
           <span>-№2-</span>
-          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
         <div class="devil-bridge-image"> 
           <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост дъявола">
@@ -81,17 +83,17 @@
           <li class="last-adventages-item">
             <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
             <span>-№3-</span>
-            <p>ВСЕ ДОСТОПРЕМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+            <p>ВСЕ ДОСТОПРЕМЕЧАТЕЛЬНОСТИ<br> НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
           <li class="last-adventages-item">
             <h2>КРАСИВАЯ ДОРОГА</h2>
             <span>-№4-</span>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО</p>
           </li>
           <li class="last-adventages-item">
             <h2>МАЛО ТУРИСТОВ</h2>
             <span>-№5-</span>
-            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br> И ТОЛПИТСЯ ТАМ</p>
           </li>
         </ul>  
       </section>
@@ -101,6 +103,7 @@
         <p>УКАЖИТЕ ПРЕДПОПЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <a class="search-button" href="search-hotels.html">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
       </section>
+      <!-- Как можно сделать так, чтобы футер немного заехал на карту? Флексами ведь это сделать не получится или нужно как-то их позиционировать друг с другом?-->
       <section class="map">
         <img src="img/map.jpg" width="1200" height="470" alt="Карта Седоны">  
       </section>
@@ -122,6 +125,7 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="Логотип «HtmlAcademy»">
       </a>
     </footer>
+  </div>
 
     <section class="modal modal-search-hotels">
       <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
@@ -148,9 +152,10 @@
           <input type="text" name="amount-of-childs" value="0" id="amount-of-childs">
           <button type="button" name="plus-adult" class="plus-icon"></button>
         </div>
-        <button class= "find-button" type="submit">Найти</button>
+        <button class="find-button" type="submit">Найти</button>
       </form>
     </section>
+  
 
 
   </body>
