@@ -33,18 +33,13 @@ body {
     display: flex;
     padding-top: 15px;
     padding-bottom: 23px;
+    padding-left: 0;
     justify-content: space-around;
-    margin: 0;
   }
 
   .site-navigation a {
     color: #000000;
   }
-
-  /* не понимаию почему без обнуления паддинга у ul список отлетает вправо? */
-  ul {          
-    padding: 0;
-  } 
 
   .header-image {
     background-image: url("../img/background-image.jpg");
@@ -402,6 +397,7 @@ body {
     display: flex;
     align-items: baseline;
     padding: 30px 73px;
+    width: 1200px;
   }
 
   .catalog-sorting ul {
@@ -440,9 +436,17 @@ body {
     color: #000000;
   }
 
-  .catalog {
-    display: flex;
-    flex-direction: column;
+  .sorting-result {
+    width: 160px;
+  }
+
+  .sorting-type {
+    width: 780px;
+  }
+
+  .sorting-up-down {
+    width: 100px;
+    background-color: #5496bd;
   }
 
   .catalog-item {
