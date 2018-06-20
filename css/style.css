@@ -8,6 +8,28 @@ body {
     background-color: #ffffff;
   }
 
+  img {
+    max-width: 100%;
+  }
+
+  .visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
   .container {
     width: 1200px;
     margin-right: auto;
@@ -27,14 +49,48 @@ body {
     background-color: #ffffff;
   }
 
+  .main-header {
+    position: relative;
+  }
+
+  .main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -70px;
+  }
+
   .site-navigation {
     list-style: none;
-
     display: flex;
+    flex-wrap: wrap;
     padding-top: 15px;
-    padding-bottom: 23px;
-    padding-left: 0;
-    justify-content: space-around;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 0;  /* Если не обнулить паддинг слева, то он его сдвигает вправо, от чего он его берет, от контейнера или от ul?*/
+  }
+
+  .site-navigation li {
+    width: 240px;
+    box-sizing: border-box;
+  }
+
+  .site-navigation li:first-child {
+    padding-left: 73px;
+  }
+
+  .site-navigation li:nth-child(2) {
+    margin-right: 240px;
+    text-align: center;
+  }
+
+  .site-navigation li:nth-child(3) {
+    text-align: center;
+  }
+
+  .site-navigation li:last-child {
+    padding-right: 73px;
+    text-align: right;
   }
 
   .site-navigation a {
@@ -51,8 +107,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-bottom: 60px;
   }
 
   .welcome-title {
@@ -75,14 +129,19 @@ body {
   .main-description {
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
   }
 
   .main-description h2 {
     font-size: 21px;
     font-weight: 700;
+    margin: 0;
 
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+  }
+
+  .main-description p {
+    margin: 0;
   }
 
   .true-city {
@@ -97,6 +156,8 @@ body {
     background-color: #81b3d2;
   
     width: 400px;
+    padding-bottom: 60px;
+    padding-top: 47px;
   }
 
   .true-city-image {
@@ -107,13 +168,13 @@ body {
   .true-city-description h2 {
     font-size: 21px;
     font-weight: 700;
+    margin: 0;
 
-    margin-top: 40px;
     margin-bottom:20px;
   }
   
   .true-city-description p {
-    margin-bottom:60px;
+    margin-bottom: 0;
     margin-top: 20px;
   }
 
@@ -128,17 +189,55 @@ body {
   .add-adventages-item {
     text-align: center;
     width: 400px;
+    padding-top: 155px;
+    padding-bottom: 80px;
   }
   
   .add-adventages-item h3 {
+    position: relative;
+    
     font-size: 21px;
     font-weight: 700;
 
-    margin-top: 155px;
+    margin-top: 0;
+  }
+
+  .add-adventages-item:nth-child(1) h3::before {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    margin-right: -10px; 
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
+  }
+
+  .add-adventages-item:nth-child(2) h3::before {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    margin-right: -80px;
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
+  }
+
+  .add-adventages-item:nth-child(3) h3::before {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    margin-right: -70px;
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
   }
 
   .add-adventages-item p {
-    margin-bottom: 80px;
+    margin: 0;
   }
 
   .devil-bridge {
@@ -152,19 +251,21 @@ body {
     background-color: #81b3d2;
 
     width: 400px;
+    padding-top: 47px;
+    padding-bottom: 60px;
   }
 
   .devil-bridge-description h2 {
     font-size: 21px;
     font-weight: 700;
 
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom:20px;
   }
 
   .devil-bridge-description p {
-    margin-bottom:60px;
     margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .devil-bridge-image {
@@ -184,18 +285,20 @@ body {
   .last-adventages-item {
     text-align: center;
     width: 400px;
+    padding-top: 47px;
+    padding-bottom: 60px; 
   }
 
   .last-adventages-item p {
-    margin-top: 25px;
-    margin-bottom: 60px;
+    margin: 0;
+    margin-top: 25px;   
   }
 
   .last-adventages-item h2 {
     font-size: 21px;
     font-weight: 700;
 
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 25px;
   }
 
@@ -220,6 +323,11 @@ body {
     line-height: 26px;
     font-weight: 700;
 
+    display: block;
+    width: 572px;
+    margin: 0 auto;
+    padding: 30px 0;
+
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -239,50 +347,98 @@ body {
     color: #796d67;
   }
 
+  .map {
+    position: relative;
+  }
+
+  .main-footer.footer-index {
+    position: absolute;
+    z-index: 2; 
+    background: rgba(253, 253, 253, 0.9);
+  }
+
   .main-footer {
-    background-color: rgba(253, 253, 253, 0.9);
-    
+    background-color: #fefefe;
+    width: 1200px;
     display: flex;
-    padding-top: 36px;
-    justify-content: space-around;
+    padding: 36px 0;
+    justify-content: space-between;
     align-items: center;
   }
 
   .footer-hash {
     font-size: 21px;
+    padding-left: 132px;
   }
 
   .footer-social {
     text-align: center;
   }
+
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50px;
+    height: 50px;
   
-  .footer-social ul {
-    list-style: none;
+    background-color: #81b3d2;
   }
   
-  .footer-social a:hover, 
-  .footer-social a:focus {
+  .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 160px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .social-button:hover,
+  .social-button:focus {
     background-color: #669ec0;
   }
 
-  .footer-social a:active {
+  .social-button:active path{
+    fill: #7baecc;
+  }
+
+  .social-button:active {
     background-color: #5496bd;
-    color: #88b6d1;
+    justify-content: center;
   }
-
+  
   .footer-logo {
-    text-align: center;
+    width: 250px;
+    display: flex;
+    padding-right: 90px; 
   }
   
-  .footer-logo a:hover,
-  .footer-logo a:focus {
-    color: #a8cbe0;
-  }
-  
-  .footer-logo a:active {
-    color: #bdbbbc;
+  .footer-logo:hover path{
+    fill: #a8cbe0;
   }
 
+  .footer-logo:active path{
+    fill: #bdbbbc;
+  }
+
+  .footer-logo a:active {
+    color: black;
+  }
+
+  .footer-logo span {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .footer-logo svg {
+    width: 120px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
   .modal {
     font-weight: 700;
   }
@@ -339,7 +495,7 @@ body {
     display: flex;
     width: 1056px;
     padding-top: 28px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     padding-right: 72px;
     padding-left: 72px; 
   }
@@ -348,32 +504,158 @@ body {
     width: 241px;
   }
 
+  .hotel-filter h2 {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  .hotel-filter ul {
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;
+  }
+
+  .filter-option {
+    margin-bottom: 23px;
+  }
+
+  .filter-option label {
+      position: relative;
+    
+      display: block;
+    
+      cursor: pointer;
+      user-select: none;
+  }
+
+  .filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+  
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid white;
+  }
+
   .cost-hotel-filter {
     width: 528px;
-    padding-left: 200px;
+    
+  }
+
+  .filter-range {
+    width: 330px;
+    padding-left: 242px;
+    color: #ffffff;
+    text-transform: uppercase;
   }
   
-  .hotel-filter h2 {
+  .filter-range-title {
+    margin-bottom: 9px;
+  
+    font-weight: 600;
     font-size: 16px;
-    font-weight: 700;
-  }
-
-  .cost-filter-title {
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  .min-cost-hotel {
-    border: 2px solid #ffffff;
-  }
-
-  .cost-hotel-filter input {
-    font-size: 14px;
     line-height: 21px;
-    color: #ffffff;
+  }
+  
+  .price-controls {
+    position: relative;
+    
+    height: 36px;
+    margin-bottom: 20px;
+  
+    font-size: 0;
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  
+  .price-controls .min-price,
+  .price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+  }
+  
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
     border: none;
+  }
 
-    background-color: transparent;
+  .range-controls {
+    position: relative;
+  
+    margin-bottom: 32px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+  
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
   }
 
   .filter-button {
@@ -381,9 +663,16 @@ body {
     line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
-    border: 2px solid #ffffff;
+    
+    display: block;
+    width: 135px;
+    margin: 0 auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
 
     background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
   }
 
   .filter-button:hover,
