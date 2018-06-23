@@ -103,11 +103,45 @@
         <p>УКАЖИТЕ ПРЕДПОПЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШЕЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <a class="search-button" href="search-hotels.html">ПОИСК ГОСТИНИЦ В СЕДОНЕ</a>
       </section>
+
+      <section class="modal modal-search-hotels">
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="visually-hidden">Поиск гостиницы</h2>
+            <div class="search-hotel-date">
+              <label for="arrivale-date">Дата заезда:</label>
+              <input id="arrivale-date" type="text" name="date" value="24 апреля 2017"> 
+              <button type="button" class="icon-calendar"><span class="visually-hidden">Календарь</span>
+              </button>
+            </div>
+            <div class="search-hotel-date">
+              <label for="departure-date">Дата выезда:</label>
+              <input id="departure-date" type="text" name="date" value="4 июля 2017"> 
+              <button type="button" class="icon-calendar"><span class="visually-hidden">Календарь</span></button>
+            </div>
+    
+            <div class="search-hotel-people">
+              <label for="amount-of-adults">Взрослые:</label>
+              <button class="minus-button" type="button" name="minus-adult" class="minus-icon"><span class="minus-icon"></span></button>
+              <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
+              <button class="plus-button" type="button" name="plus-adult" class="plus-icon"><span class="plus-icon"></span></button>
+              
+              <label for="amount-of-childs">Дети:</label>
+              <button class="minus-button" type="button" name="minus-adult" class="minus-icon"><span class="minus-icon"></span></button>
+              <input type="text" name="amount-of-childs" value="0" id="amount-of-childs">
+              <button class="plus-button" type="button" name="plus-adult" class="plus-icon"><span class="plus-icon"></span></button>
+              
+            </div>
+            <button class="find-button" type="submit">Найти</button>
+          </form>
+        </section>
       
       <section class="map">
         <img src="img/map.jpg" width="1200" height="470" alt="Карта Седоны">  
       </section>
     </main>
+
+    
+
 <!--Если прописать для футера bottom=0, то он прилепляется гораздо выше (в блок о настоящем городке), 
   но никак не к map, хотя map Задано relative, из-за чего он его не видит?-->
     <footer class="main-footer footer-index">
@@ -141,34 +175,7 @@
     </footer>
   </div>
 
-    <section class="visually-hidden modal modal-search-hotels">
-      <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <div class="search-hotel-date">
-          <label for="arrivale-date">Дата заезда:</label>
-          <input id="arrivale-date" type="text" name="date" value="24 апреля 2017"> 
-          <button type="button" class="icon-calendar">Календарь</button>
-        </div>
-        <div class="search-hotel-date">
-          <label for="departure-date">Дата выезда:</label>
-          <input id="departure-date" type="text" name="date" value="4 июля 2017"> 
-          <button type="button" class="icon-calendar">Календарь</button>
-        </div>
-
-        <div class="search-hotel-people">
-          <label for="amount-of-adults">Взрослые:</label>
-          <button type="button" name="minus-adult" class="minus-icon"></button>
-          <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
-          <button type="button" name="plus-adult" class="plus-icon"></button>
-          
-          <label for="amount-of-childs">Дети:</label>
-          <button type="button" name="minus-adult" class="minus-icon"></button>
-          <input type="text" name="amount-of-childs" value="0" id="amount-of-childs">
-          <button type="button" name="plus-adult" class="plus-icon"></button>
-        </div>
-        <button class="find-button" type="submit">Найти</button>
-      </form>
-    </section>
+    
 
 
   </body>
