@@ -42,6 +42,7 @@
       popup.classList.remove("modal-error");
       arDate.focus();
     });
+
     form.addEventListener("submit", function (evt) {
       if (!arDate.value || !depDate.value || (!childs.value && !adults.value) || (childs.value == 0 && adults.value == 0 )) {
       evt.preventDefault();
