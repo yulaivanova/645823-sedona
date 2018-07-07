@@ -179,7 +179,8 @@ a {
 
 .main-description p {
   margin: 0;
-  padding-left: 14px;
+  padding-left: 9px;
+  padding-bottom: 2px;
 }
 
 .true-city {
@@ -197,10 +198,8 @@ a {
 
   width: 400px;
   padding-top: 45px;
-  padding-left: 2px;
 
   line-height: 23px;
-
 }
 
 .true-city-image {
@@ -216,15 +215,16 @@ a {
   font-weight: 700;
   margin: 0;
 
-  margin-bottom:23px;
+  margin-bottom:20px;
 }
 
 .true-city-description p {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 19px;
   margin-right: 38px;
   margin-left: 45px;
   padding-right: 10px;
+  line-height: 21px;
 }
 
 .add-adventages-list {
@@ -240,7 +240,7 @@ a {
 .add-adventages-item {
   text-align: center;
   width: 400px;
-  padding-top: 161px;
+  padding-top: 159px;
   padding-bottom: 80px;
 }
 
@@ -252,7 +252,7 @@ a {
   line-height: 23px;
 
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .add-adventages-item:nth-child(1) h3::before {
@@ -370,13 +370,13 @@ a {
   line-height: 22px;
   width: 400px;
   padding-top: 47px;
-  padding-bottom: 61px; 
+  padding-bottom: 59px; 
 }
 
 .last-adventages-item p {
   width: 269px;
   
-  margin-top: 20px; 
+  margin-top: 22px; 
   margin-left: 64px;
   margin-bottom: 0;
 
@@ -465,7 +465,7 @@ a {
 .main-footer {
   background-color: #fefefe;
   width: 1200px;
-  padding: 35px 0;
+  padding: 36px 0;
 
   display: -webkit-box;
 
@@ -562,11 +562,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 91px; 
+  padding-right: 90px; 
 }
 
 .footer-academy-logo span {
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 }
 
 .footer-logo svg {
@@ -646,7 +646,7 @@ a {
 
 .hotel-filter h2 {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -679,8 +679,8 @@ a {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -34px;
-  top: 0;
+  left: -36px;
+  top: 2px;
 
   width: 23px;
   height: 23px;
@@ -995,7 +995,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 781px;
+  width: 780px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: start;
