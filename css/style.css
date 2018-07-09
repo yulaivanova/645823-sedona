@@ -5,7 +5,11 @@ body {
   color: #000000;
   text-transform: uppercase;
   
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+}
+
+.no-js .modal {
+  display: block;
 }
 
 img {
@@ -36,11 +40,11 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 1200px;
   min-height: 100vh;
-
+  background-color: #ffffff;
   display: -webkit-box;
 
   display: -ms-flexbox;
-
+  
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -51,9 +55,9 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   
   
-  -webkit-box-shadow: 0px 0px 70px 2px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 2px 0px 50px 2px rgba(0, 1, 1, 0.2);
   
-          box-shadow: 0px 0px 70px 2px rgba(0, 1, 1, 0.2);
+          box-shadow: 2px 0px 50px 2px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -77,6 +81,7 @@ a {
   top: 0;
   left: 50%;
   margin-left: -70px;
+  z-index: 1;
 }
 
 .site-navigation {
@@ -88,8 +93,9 @@ a {
       flex-wrap: wrap;
   padding-top: 14px;
   padding-bottom: 17px;
+  padding-left: 71px;
+  padding-right: 71px;
   margin: 0;
-  padding-left: 0; 
 }
 
 .site-navigation li {
@@ -99,20 +105,20 @@ a {
 }
 
 .site-navigation li:first-child {
-  padding-left: 70px;
+  text-align: left;
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 240px;
-  text-align: center;
+  margin-right: 92px;
+  text-align: left;
 }
 
 .site-navigation li:nth-child(3) {
-  text-align: center;
+  text-align: right;
+
 }
 
-.site-navigation li:last-child {
-  padding-right: 73px;
+.site-navigation li:nth-child(4) {
   text-align: right;
 }
 
@@ -121,11 +127,12 @@ a {
 }
 
 .header-image {
+  position: relative;
   background-image: url("../img/background-image.jpg");
   background-repeat: no-repeat;
   background-position: 0 -31px;
   background-size: 1200px auto;
-  background-color: gray;
+  background-color: #89bad6;
 
   display: -webkit-box;
 
@@ -141,10 +148,19 @@ a {
           align-items: center;
 }
 
+.header-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 1200px;
+  height: 57px;
+
+  background-image: url("../img/shape.png");
+}
 .welcome-title {
   margin-top: 76px;
-  margin-bottom: 23px;
-  padding-right: 2px;
+  margin-bottom: 80px;
 }
 
 .site-navigation a:hover,
@@ -189,6 +205,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  background-color: #81b3d2;
 }
 
 .true-city-description {
@@ -213,9 +230,8 @@ a {
 .true-city-description h2 {
   font-size: 21px;
   font-weight: 700;
-  margin: 0;
-
-  margin-bottom:20px;
+  margin: 0 0 20px 125px;
+  width: 150px;
 }
 
 .true-city-description p {
@@ -232,6 +248,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -239,10 +256,11 @@ a {
 
 .add-adventages-item {
   text-align: center;
-  width: 400px;
+  width: 33.33%;
   padding-top: 159px;
   padding-bottom: 80px;
-}
+} 
+
 
 .add-adventages-item h3 {
   position: relative;
@@ -314,6 +332,8 @@ a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+
+  background-color: #81b3d2;
 }
 
 .devil-bridge-description {
@@ -361,6 +381,7 @@ a {
   display: -ms-flexbox;
 
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -368,7 +389,7 @@ a {
 .last-adventages-item {
   text-align: center;
   line-height: 22px;
-  width: 400px;
+  width: 33.33%;
   padding-top: 47px;
   padding-bottom: 59px; 
 }
@@ -484,15 +505,27 @@ a {
 }
 
 .footer-hash {
+  display: inline-block;
+  vertical-align: middle;
+
+  word-wrap: break-word;
   font-size: 21px;
-  padding-left: 132px;
-  padding-bottom: 12px;
+  text-align: center;
+
+  padding-bottom: 10px;
+  padding-left: 5px;
+
+  width: 33%;
+}
+
+.footer-hash>a {
+  color: #000000;
 }
 
 .footer-social {
-  text-align: center;
-  padding-left: 29px;
-  padding-bottom: 9px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  width: 34%;
 }
 
 .social-button {
@@ -527,6 +560,11 @@ a {
   padding: 0;
 }
 
+.footer-social li {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
@@ -559,21 +597,27 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 90px; 
 }
 
 .footer-academy-logo span {
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+  padding-right: 5px;
 }
 
 .footer-logo svg {
   width: 120px;
   height: 50px;
-  margin-left: 10px;
-  padding-right: 4px;
+  padding-right: 7px;
+}
+
+.search-hotel-form {
+  width: 463px;
 }
 
 .search-hotel-form input {
@@ -598,7 +642,7 @@ a {
 
 .find-button {
   display: block;
-  width:459px;
+  width:463px;
   padding: 19px 0;
 
   font-size: 21px;
@@ -1097,6 +1141,7 @@ a {
 .stars span {
   font-size: 0;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   margin-top: 2px;
@@ -1114,6 +1159,14 @@ a {
   display: none;
 }
 
+input[type="text"]::-ms-clear {
+  display: none;
+}
+
+.modal-close {
+  visibility: hidden;
+  transition: opacity 500ms ease-in;
+}
 
 .modal-show {
   display: block;
@@ -1133,11 +1186,6 @@ a {
           box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
 }
 
-.modal-close {
-  display: none;
-  -webkit-animation: form-close 2s;
-          animation: form-close 2s;
-}
 
 
 @-webkit-keyframes form-opacity {
@@ -1156,6 +1204,15 @@ a {
     }
   100% {
     opacity:1;
+    }
+ }
+
+ @keyframes form-close {
+  0% {
+    opacity:1;
+    }
+  100% {
+    opacity:0;
     }
  }
 
@@ -1276,10 +1333,10 @@ a {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
+flex-wrap: wrap;
 -webkit-box-pack: justify;
     -ms-flex-pack: justify;
         justify-content: space-between;
-height: 40px;
 
 margin-bottom: 52px;
 }
@@ -1298,6 +1355,7 @@ margin-bottom: 0;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
+flex-wrap: wrap;
 -webkit-box-pack: justify;
     -ms-flex-pack: justify;
         justify-content: space-between;
@@ -1342,6 +1400,8 @@ width: 11px;
 height: 3px;
 margin-bottom: 3px;
 
+vertical-align: middle;
+
 background-color: #d0d0d0;
 }
 
@@ -1349,6 +1409,8 @@ background-color: #d0d0d0;
 display: inline-block;
 width: 11px;
 height: 3px;
+
+vertical-align: middle;
 
 margin-bottom: 3px;
 

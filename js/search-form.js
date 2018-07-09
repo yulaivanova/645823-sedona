@@ -12,6 +12,8 @@
     var plusChild = document.querySelector("[name=plus-child]");
     var minusChild = document.querySelector("[name=minus-child]");
 
+    document.body.classList.remove('no-js');
+
     plusAdult.addEventListener("click", function(evt) {
       evt.preventDefault();
       adults.value++;
@@ -39,9 +41,13 @@
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.toggle("modal-show");
+      popup.classList.toggle("modal-close");
       popup.classList.remove("modal-error");
+      
       arDate.focus();
     });
+
+    
 
     form.addEventListener("submit", function (evt) {
       if (!arDate.value || !depDate.value || (!childs.value && !adults.value) || (childs.value == 0 && adults.value == 0 )) {
