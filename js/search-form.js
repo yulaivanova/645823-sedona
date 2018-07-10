@@ -45,9 +45,7 @@
       popup.classList.remove("modal-error");
       
       arDate.focus();
-    });
-
-    
+    });    
 
     form.addEventListener("submit", function (evt) {
       if (!arDate.value || !depDate.value || (!childs.value && !adults.value) || (childs.value == 0 && adults.value == 0 )) {
@@ -56,7 +54,14 @@
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
-    }});
+    }
+      if (!childs.value ) {
+        childs.value=0
+      };
+      if (!adults.value ) {
+        adults.value=0
+      };
+    });
     
     window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {

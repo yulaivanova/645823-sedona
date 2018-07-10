@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="no-js">
   
@@ -27,13 +27,12 @@
     <main>
 
       <div class="header-image">  
-          <img src="img/welcome-text.png" class="welcome-title" alt="Welcome"/>
-            
+        <img src="img/welcome-text.png" class="welcome-title" alt="Welcome to Sedona"/>  <!--Контентное изображение, без которого теряется смысл раздела-->
       </div>
 
       <section class="main-description">
         <h1 class="visually-hidden">5 преимуществ Седоны</h1> 
-        <h2>СЕДОНА &mdash; НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        <h2>СЕДОНА &mdash; НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
         <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
       </section>
 
@@ -43,7 +42,6 @@
           <span>&mdash; №1 &mdash;</span>
           <p>СЕДОНА &mdash; НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <div class="true-city-image"></div>
       </section>
 
       <section class="add-adventages"> 
@@ -70,7 +68,6 @@
           <span>&mdash; №2 &mdash;</span>
           <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
-        <div class="devil-bridge-image"></div>
       </section>
 
       <section class="last-adventages">
@@ -119,28 +116,28 @@
               <label for="adults-amount">Взрослые:</label>
               <button class="minus-button" type="button" name="minus-adult">
                 <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
-                <span class="minus-icon"></span>
+                
               </button>
               <input type="text" name="amount-of-adults" value="2" id="adults-amount">
               <button class="plus-button" type="button" name="plus-adult">
                 <span class="visually-hidden">Увеличить количество взрослых на 1</span>
-                <span class="plus-icon"></span>
+                
               </button>
             </div>
             <div class="amount">
               <label for="childs-amount">Дети:</label>
               <button class="minus-button" type="button" name="minus-child">
                 <span class="visually-hidden">Уменьшить количество детей на 1</span>
-                <span class="minus-icon"></span>
+                
               </button>
               <input type="text" name="amount-of-childs" value="0" id="childs-amount">
               <button class="plus-button" type="button" name="plus-child">
                 <span class="visually-hidden">Увеличить количество детей на 1</span>
-                <span class="plus-icon"></span>
+                
               </button>
             </div>
           </div>
-          <button class="find-button" type="submit">Найти</button>
+          <button class="find-button" type="submit">Найти</button> <!--Валидация работает так, что, если хотя бы в одном из полей(кол-во детей/взрослых) указано какое-то число отличное от 0, то форма отправляется-->
         </form>
       </section>
       
@@ -184,7 +181,7 @@
     </footer>
   </div>
   
-  <script src="js/search-form.js"></script>
+  <script src="js/search-form.min.js"></script>
 
   </body>
 </html>
