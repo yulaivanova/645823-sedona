@@ -118,7 +118,7 @@
                 <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
                 
               </button>
-              <input type="text" name="amount-of-adults" value="2" id="adults-amount">
+              <input type="text" name="amount-of-adults" value="2" id="adults-amount" pattern="[0-9]{1,2}" title="Количество взрослых не более 99">
               <button class="plus-button" type="button" name="plus-adult">
                 <span class="visually-hidden">Увеличить количество взрослых на 1</span>
                 
@@ -130,15 +130,15 @@
                 <span class="visually-hidden">Уменьшить количество детей на 1</span>
                 
               </button>
-              <input type="text" name="amount-of-childs" value="0" id="childs-amount">
+              <input type="text" name="amount-of-childs" value="0" id="childs-amount" pattern="[0-9]{1,2}" title="Количество детей не более 99">
               <button class="plus-button" type="button" name="plus-child">
                 <span class="visually-hidden">Увеличить количество детей на 1</span>
                 
               </button>
             </div>
           </div>
-          <button class="find-button" type="submit">Найти</button> <!--Валидация работает так, что, если хотя бы в одном из полей(кол-во детей/взрослых) указано какое-то число отличное от 0, то форма отправляется-->
-        </form>
+          <button class="find-button" type="submit">Найти</button> 
+          </form>
       </section>
       
       <section class="map">
